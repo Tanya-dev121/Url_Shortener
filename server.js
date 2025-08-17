@@ -28,7 +28,7 @@ app.post("/short", UrlController);
 
 //dynamic routing
 
-app.get("/:generatedCode", getOriginalUrl);
+app.get("/short/:generatedCode", getOriginalUrl);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
